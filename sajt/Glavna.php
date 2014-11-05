@@ -1,5 +1,7 @@
 <?php 
+header('Content-Type: text/html; charset=utf-8');
 
+require('../php/connect.php');
 ?>
 <html>
 
@@ -55,7 +57,7 @@
 						<input type="button" class="dugme_zbp" value="Potraži"/>
 					</div>
 				</div>
-				<div id="forma_za_prijavu">												<!--zp = za prijavu-->
+				<div id="forma_za_prijavu" method="post" action="../php/checklogin.php">												<!--zp = za prijavu-->
 					<div id="zaglavlje_forme_zp"><h1>PRIJAVA</h1></div>
 					<div id="korisnik_zp">
 						<h1>Korisničko ime</h1>
@@ -66,7 +68,7 @@
 						<input type="password" name="lozinka_zp" id="lozinka_zp" placeholder="Lozinka"/>
 					</div>
 					<div id="dugme_zp">
-						<input type="button" class="dugme_zp" value="Prijavi me"/>
+						<input type="submit" class="dugme_zp" value="Prijavi me"/>
 					</div>
 				</div>
 			</div>
