@@ -43,7 +43,14 @@ require('../php/connect.php');
 					<div id="okrug_zbp">
 						<h1>OPŠTINA</h1>
 						<select name="opština">
-							<option value="palilula">Palilula</option>
+							<?php
+                                $query="SELECT ime_opstine FROM opstine";
+                                $result=@mysqli_query($dbcon,$query);
+                                while($row=mysqli_fetch_array($result,MYSQL_ASSOC))
+                                    {
+                                        echo "<option>".$row['ime_opstine'];
+                                    }
+                            ?>
 						</select>
 					</div>
 					<div id="tip_zbp">
