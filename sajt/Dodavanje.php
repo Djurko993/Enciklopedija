@@ -34,13 +34,13 @@ require('../php/connect.php');
 			</form>
 		</div>
 		<div id="forma_za_dodavanje_tipa">
-			<form id="forma_zdt">
+			<form id="forma_zdt" method="post" action="../php/dodavanje_tipa.php">
 				<div id="fzdt_zaglavlje">
 					<h1>Dodavanje tipa</h1>
 				</div>
 				<div id="fzdt_unos">
 					<p>Unesite tip</p>
-					<input type="text" id="fzdt_tip" name="fzdt_tip" placeholder="Tip"/> 
+					<input type="text" id="fzdt_tip" name="fzdt_tip" placeholder="Tip" autofocus/> 
 				</div>
 				<div id="fzdt_dugme">
 					<input type="submit" class="dugme_fzdt" value="Dodaj"/>

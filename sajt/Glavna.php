@@ -56,8 +56,14 @@ require('../php/connect.php');
 					<div id="tip_zbp">
 						<h1>TIP</h1>
 						<select name="tip">
-							<option value="manastir">Manastir</option>
-							<option value="arh_nalazište">Ar. nalazište</option>
+							<?php
+                                $query="SELECT ime FROM kategorije";
+                                $result=@mysqli_query($dbcon,$query);
+                                while($row=mysqli_fetch_array($result,MYSQL_ASSOC))
+                                    {
+                                        echo "<option>".$row['ime'];
+                                    }
+                            ?>
 						</select>
 					</div>
 					<div id="dugme_zbp">
