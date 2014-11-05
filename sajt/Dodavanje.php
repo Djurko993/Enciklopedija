@@ -20,16 +20,16 @@ require('../php/connect.php');
 	
 	<body>
 		<div id="forma_za_dodavanje_opštine">
-			<form id="forma_zdo">
+			<form id="forma_zdo" method="post" action="../php/dodavanje_opstine.php">
 				<div id="fzdo_zaglavlje">
 					<h1>Dodavanje opštine</h1>
 				</div>
 				<div id="fzdo_unos">
 					<p>Unesite naziv opštine</p>
-					<input type="text" id="naziv_opštine" name="naziv_opštine" placeholder="Opština"/> 
+					<input type="text" id="naziv_opštine" name="naziv_opstine" placeholder="Opština"/> 
 				</div>
 				<div id="fzdo_dugme">
-					<input type="button" class="dugme_fzdo" value="Dodaj"/>
+					<input type="submit" class="dugme_fzdo" value="Dodaj"/>
 				</div>
 			</form>
 		</div>
@@ -43,7 +43,7 @@ require('../php/connect.php');
 					<input type="text" id="fzdt_tip" name="fzdt_tip" placeholder="Tip"/> 
 				</div>
 				<div id="fzdt_dugme">
-					<input type="button" class="dugme_fzdt" value="Dodaj"/>
+					<input type="submit" class="dugme_fzdt" value="Dodaj"/>
 				</div>
 			</form>
 		</div>
