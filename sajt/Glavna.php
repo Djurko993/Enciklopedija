@@ -57,7 +57,7 @@ require('../php/connect.php');
 						<input type="button" class="dugme_zbp" value="Potraži"/>
 					</div>
 				</div>
-				<div id="forma_za_prijavu" method="post" action="../php/checklogin.php">												<!--zp = za prijavu-->
+				<form id="forma_za_prijavu" method="post" action="../php/checklogin.php">												<!--zp = za prijavu-->
 					<div id="zaglavlje_forme_zp"><h1>PRIJAVA</h1></div>
 					<div id="korisnik_zp">
 						<h1>Korisničko ime</h1>
@@ -68,9 +68,9 @@ require('../php/connect.php');
 						<input type="password" name="lozinka_zp" id="lozinka_zp" placeholder="Lozinka"/>
 					</div>
 					<div id="dugme_zp">
-						<input type="submit" class="dugme_zp" value="Prijavi me"/>
+						<input type="submit" class="dugme_zp" value="Prijavi me" />
 					</div>
-				</div>
+				</form>
 			</div>
 		</div>
 	</body>

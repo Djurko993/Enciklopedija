@@ -1,13 +1,13 @@
 <?php
 header('Content-Type: text/html; charset=utf-8');
 session_start();
-if (!isset($_SESSION['myusername']))
+if (!isset($_SESSION['k_ime_zp']))
      header("Location: ./Glavna.php");
 if (!isset($_SESSION['open']))     // proverava da li javlja greska prilikom unosa opstine i ispisuje poruku na osnovu toga
     $_SESSION['message']="Unesi ime opstine";
 if (!isset($_SESSION['open2']))
     $_SESSION['message2']="Unesi ime spomenika";
-require('connect.php');
+require('../php/connect.php');
    
 ?>
 <html>
